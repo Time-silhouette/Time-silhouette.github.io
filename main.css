@@ -1,20 +1,16 @@
 @charset "UTF-8";
-html, body {
-	background: #B0C4DE;
-}
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+
+#main {
+	position: relative;
+	top: 0;
+	padding: 40px 100px 10px 100px;
 }
 #slideshow {
-	width: 1000px;
-	height: 600px;
+	width: center;
+	height: 700px;
 	overflow: hidden;
-	margin: 0 auto;
 	position: relative;
-	text-align: center;
-	color: #4b0082;
+	margin: 0 auto;
 }
 #slideshow ul, #slideshow ul li {
 	list-style: none;
@@ -42,7 +38,20 @@ html, body {
 #slideshow-nav span.active {
 	background: #FFF;
 }
+#menu {
+	border-bottom: 3px solid rgba(255,255,255,.5);
+	margin-bottom: 30px;
+	padding-bottom: 12px;
+	width: 100%;
+}
+#open-side-nav {
+}
 #title {
-	font-size: 50px;
-	margin-bottom: 10px;
+	display: inline-block;
+	font-size: 70px;
+	margin-left: 30px;
+	color: #FFF;
+}
+#section {
+	overflow: hidden;
 }
