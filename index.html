@@ -5,28 +5,30 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="side.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="global.css">
 </head>
 <body>
 	<div id="wrapper">
 		<div id="main">
-			<div>
-				<a href="" id="open-side-nav"><img src="大列表.svg"></a>
-			</div>
-			<div id="slideshow">
-				<!--主界面-->
+			<div id="slideshow">				
+			<div id="menu">
+				<a href="" id="open-side-nav"><img src="列表.svg"></a>
 				<h1 id="title">Time Silhouette</h1>
+			</div>
 				<ul>
-					<li><img src="都市.jfif" alt="..."></li>
-					<li><img src="校园.jfif" alt="..."></li>
-					<li><img src="古装.jfif" alt="..."></li>
+					<li><img src="校园.png" alt="..."></li>
+					<li><img src="都市.png" alt="..."></li>
+					<li><img src="古装.png" alt="..."></li>
 				</ul>
 				<div id="slideshow-nav"></div>
 			</div>
 		</div>
+
 		<div id="side-nav">
-			<!--侧边栏-->
 			<ul>
-				<a href="" id="close-side-nav">Close</a>
+				<li>
+					<a href="" id="close-side-nav"><img src="退出.svg"></a>
+				</li>				
 				<li>Home</li>
 				<li>Store</li>
 				<li>Job</li>
@@ -34,6 +36,10 @@
 				<li>More</li>
 			</ul>
 		</div>
+	</div>
+
+	<div id="section">
+		<img src="都市.jfif" alt="...">
 	</div>
 	<script src="jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="slideshow.js"></script>
