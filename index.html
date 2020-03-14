@@ -2,47 +2,62 @@
 <html>
 <head>
 	<title>Time silhouette</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="side.css">
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<link rel="stylesheet" type="text/css" href="global.css">
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="main.css"
+	media="screen and (min-width: 600px">
+	<link rel="stylesheet" type="text/css" href="css480.css"
+	media="screen and (max-width: 599px">
 </head>
 <body>
-	<div id="wrapper">
-		<div id="main">
-			<div id="slideshow">				
-			<div id="menu">
-				<a href="" id="open-side-nav"><img src="列表.svg"></a>
-				<h1 id="title">Time Silhouette</h1>
-			</div>
+	<h1 id="title">Time Silhouette</h1>
+	<nav id="menu">
+		<button id="menubutton">MENU</button>
+		<ul id="menu-list">
+			<li><a class="outer" href="">首页</a></li>
+			<li><a class="outer" href="">步行街</a>
 				<ul>
-					<li><img src="校园.png" alt="..."></li>
-					<li><img src="都市.png" alt="..."></li>
-					<li><img src="古装.png" alt="..."></li>
+					<li class="inner"><a href="">签约摄影师</a></li>
+					<li class="inner"><a href="">纪念品小店</a></li>
 				</ul>
-				<div id="slideshow-nav"></div>
-			</div>
-		</div>
-
-		<div id="side-nav">
-			<ul>
-				<li>
-					<a href="" id="close-side-nav"><img src="退出.svg"></a>
-				</li>				
-				<li>Home</li>
-				<li>Store</li>
-				<li>Job</li>
-				<li>Join Us</li>
-				<li>More</li>
-			</ul>
-		</div>
-	</div>
-
-	<div id="section">
-		<img src="都市.jfif" alt="...">
-	</div>
-	<script src="jquery-3.4.1.min.js"></script>
-	<script type="text/javascript" src="slideshow.js"></script>
-	<script type="text/javascript" src="side.js"></script>
+			</li>
+			<li><a class="outer" href="">联系我们</a>
+				<ul>
+					<li class="inner"><a href="">约拍</a></li>
+					<li class="inner"><a href="">留言板</a></li>
+				</ul>
+			</li>
+			<li><a class="outer" href="">加入我们</a>
+				<ul>
+					<li class="inner"><a href="">入驻</a></li>
+					<li class="inner"><a href="">工作应聘</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<script src="jquery-3.4.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+	//
+		var menulist = document.getElementById('menu-list');
+		menubutton.onclick = function() {
+			if (window.getComputedStyle(menulist).display === "none") {
+				menubutton.className = "active";
+			}else{
+				menubutton.className = "";
+			}
+		}
+	//
+		function foldAll(){
+			for (var i = 0; i < $('.outer').length; i ++) {
+				$('.outer')[i].classList.add("hide");
+			}
+			for (var j = 0; j < $('.inner').length; j ++) {
+				$('.inner')[j].classList.add("hide");
+			}
+		}
+		foldAll();
+	//移动端点击事件取代桌面端鼠标经过事件打开次级菜单效果：
+		});
+	</script>
 </body>
 </html>
