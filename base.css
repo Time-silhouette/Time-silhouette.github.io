@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/********
+	浅紫色#9b59b6
+	深紫色#8e44ad
+	浅蓝色#2980b9
+	深蓝色#3498db
+	浅灰蓝#edf5f9
+*********/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	width: 100%;
+	font-family: sans-serif;
+}
+
+/*           顶部菜单           */
+
+/*           横幅               */
+#bg {
+	max-width: 100%;
+}
+#bg_mob {
+	max-width: 94%;
+}
+/*           展示区             */
+#main {
+	width: 100%;
+}
