@@ -3,60 +3,69 @@
 <head>
 	<title>Time silhouette</title>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="main.css"
-	media="screen and (min-width: 600px">
-	<link rel="stylesheet" type="text/css" href="css480.css"
-	media="screen and (max-width: 599px">
+	<link rel="stylesheet" type="text/css" href="base.css">
+	<link rel="stylesheet" type="text/css" href="css480.css" media="screen and (max-width:480px)">
+	<link rel="stylesheet" type="text/css" href="css481_1024.css" media="screen and (min-width:481px) and (max-width:1024px)">
+	<link rel="stylesheet" type="text/css" href="css1025.css" media="screen and (min-width:1025px)">
 </head>
 <body>
-	<h1 id="title">Time Silhouette</h1>
-	<nav id="menu">
-		<button id="menubutton">MENU</button>
-		<ul id="menu-list">
-			<li><a class="outer" href="">首页</a></li>
-			<li><a class="outer" href="">步行街</a>
-				<ul>
-					<li class="inner"><a href="">签约摄影师</a></li>
-					<li class="inner"><a href="">纪念品小店</a></li>
-				</ul>
-			</li>
-			<li><a class="outer" href="">联系我们</a>
-				<ul>
-					<li class="inner"><a href="">约拍</a></li>
-					<li class="inner"><a href="">留言板</a></li>
-				</ul>
-			</li>
-			<li><a class="outer" href="">加入我们</a>
-				<ul>
-					<li class="inner"><a href="">入驻</a></li>
-					<li class="inner"><a href="">工作应聘</a></li>
-				</ul>
-			</li>
+	<nav id="top-menu">
+		<ul>
+			<li><a href="">首页</a></li>
+			<li><a href="">小店</a></li>
+			<li><a href="">放映场</a></li>
+			<li><a href="">约拍</a></li>
+			<li><a href="">我的</a></li>
 		</ul>
 	</nav>
+	<header>
+		<img src="timbg.png" id="bg">
+		<img src="timbg_mob.png" id="bg_mob">		
+	</header>
+	<section id="main">
+		<div class="show">
+			<img class="showimg" src="校园.png">
+			<h2>青葱岁月</h2>
+			<p>在青涩美好的学生时代，放肆恣意的率真年华里，留下多少难忘的记忆，许多人都在怀念着记忆里的那个ta,无论最后的结果咋样，ta都留在了你记忆中最美的时光。随着几年前的某些以青春为主题的电视剧电影的蓬勃发展，这类青涩的感情，开始被许多人所怀念。但市场上大多数这类的电视剧总是与我们记忆之中的有些偏差。所以，我们将这类青春片的模式升级为了“青春+”。将青春可以与其他元素进行结合，如青春+运动，总能有着合适的项目供我们的用户进行选择，总能找到记忆之中的那个青葱时光，青春校园。</p>
+		</div>
+		<div class="show">
+			<img class="showimg" src="古装.png">
+			<h2>古装历史纪实剧</h2>
+			<p>在这个剧目之中，我们更注重对历史现象的忠实再现，按照历史提供的确凿人物关系进行剧作结构，并以历史事件的自然进程安排剧情进展。这类剧目为了满足那些忠于历史的用户。去体验这个项目不但可以获得历史知识，又可以在一定程度上满足他们艺术欣赏的要求。</p>
+		</div>		
+		<div class="show">
+			<img class="showimg" src="都市.png">
+			<h2>人生合伙人</h2>
+			<p>我们在人生之中有着各种各样的搭档，在工作的阶段，在职场之上，这种的搭档被称为合伙人。我们开辟这个区域为了给予那些未体验过都市职场的人，来感受都市职场的残酷，来感受合伙人的重要。在拍摄的期间，可以提前感受都市职场的残酷，体验经历挫折之后，在于伙伴共同解决问题，共同成长。让自己有着信心去面对现实之中的职场。</p>
+		</div>
+	</section>
+	<footer id="buttom-menu">		
+		<h3>步行街</h3>
+		<ul>
+			<li><a href="">签约摄影师</a></li>
+			<li><a href="">纪念品小店</a></li>
+			<li><a href="">影片放映场</a></li>
+		</ul>					
+		<h3>关于我们</h3>
+		<ul>
+			<li><a href="">组织简介</a></li>
+			<li><a href="">经营业务</a></li>
+		</ul>
+		<h3>联系我们</h3>
+		<ul>
+			<li><a href="">约拍</a></li>
+			<li><a href="">留言板</a></li>
+		</ul>
+		<h3>加入我们</h3>
+		<ul>
+			<li><a href="">入驻</a></li>
+			<li><a href="">应聘</a></li>
+		</ul>							
+	</footer>
 	<script src="jquery-3.4.1.min.js" type="text/javascript"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 	//
-		var menulist = document.getElementById('menu-list');
-		menubutton.onclick = function() {
-			if (window.getComputedStyle(menulist).display === "none") {
-				menubutton.className = "active";
-			}else{
-				menubutton.className = "";
-			}
-		}
-	//
-		function foldAll(){
-			for (var i = 0; i < $('.outer').length; i ++) {
-				$('.outer')[i].classList.add("hide");
-			}
-			for (var j = 0; j < $('.inner').length; j ++) {
-				$('.inner')[j].classList.add("hide");
-			}
-		}
-		foldAll();
-	//移动端点击事件取代桌面端鼠标经过事件打开次级菜单效果：
 		});
 	</script>
 </body>
