@@ -1,77 +1,88 @@
 @charset "UTF-8";
 
-* {
-	margin: 0;
-	padding: 0;
-}
-#title {
+
+/********顶部菜单***********/
+#top-menu ul {
 	text-align: center;
-}
-#menubutton {
-	width: 100%;
-	background: #2980b9;
-	color: #fff;
-	display: block;
-	font-size: 1.5em;
-	padding: .4em 0;
-	cursor: pointer;
-	border: none;
-	margin-bottom: 5px;
-}
-#menu-list {
-	display: none;
-	position: absolute;
-	width: 100%;
-	text-align: center;
-}
-#menubutton.active + ul {
-	display: block;
-}
-/********
-	浅紫色#9b59b6
-	深紫色#8e44ad
-	浅蓝色#2980b9
-	深蓝色#3498db
-	浅灰蓝#edf5f9
-	margin: 20px;
-	padding: 7px 46px 10px 45px;
-*********/
-#menu ul {
-}
-#menu ul li {
-	text-align: center;
-	list-style: none;
-}
-#menu ul li a {
+	padding: 10px 0;
+}                                  
+#top-menu ul li {
 	display: inline-block;
+	width: 15%;
+}
+#top-menu ul li a {
 	text-decoration: none;
-	background: #b0c4de;
-	color: #fff;
-	height: 50px;
-	width: 98%;
-	border-bottom: 1px solid #fff;
-	border-radius: 6px;
-	line-height: 50px;
 }
-#menu ul li a:hover{
-	background: #2980b9;
+
+
+/***********横幅*************/                              
+#bg {
+	display: none;
 }
-.outer::after{
+#bg_mob {
+	padding: 10px 0;
+	margin: 0 3% 10px 3%;
+	border-bottom: 1px solid #000;
+	border-top:  1px solid #000;
+}
+
+
+/**********展示区**********/
+#main {
+	margin: 0 3%;
+	font-size: 15px;
+	line-height: 25px;
+}
+.show {
+	max-width: 88%;
+	margin: 0 3%;
+}
+.showimg {
+	max-width: 40%;
+}
+#main h2 {
+	font-size: 20px;
+}
+
+
+/********底部菜单栏********/
+#buttom-menu {
+	position: relative;
+	width: 88%;
+	margin: 20px 6%;
+	padding: 20px 0;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	font-size: 12px;
+	text-align: left;
+}
+#buttom-menu ul {
+	border-bottom: 1px solid #e3e3e3;
+}
+#buttom-menu h3 {
+	padding: 10px 0 6px 0;
+	width: 100%;
+}
+#buttom-menu h3::after{
+	position: absolute;
+	display: inline-block;
 	content: '';
 	width: 0;
 	height: 0;
-	border-width: 5px;
+	border-width: 4px;
 	border-style: solid;
-	position: absolute;
-	border-color: #fff transparent transparent transparent;
-	right: 20px;
-	margin-top: 25px;
+	border-color: #000 transparent transparent transparent;
+	right: 7px;
+	margin-top: 7px;
 }
-.outer.hide::after{
-	border-color: transparent #fff transparent transparent;
-	right: 20px;
-	margin-top: 25px;
+#buttom-menu ul li {
+	width: 100%;
+	list-style: none;
+	padding: 6px 0;
+	text-indent: .5em;
 }
-.inner.hide {
-	display: none;
+#buttom-menu ul li a {
+	text-decoration: none;
 }
+
+
