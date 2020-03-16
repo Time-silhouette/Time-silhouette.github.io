@@ -10,9 +10,7 @@
 	display: inline-block;
 	width: 15%;
 }
-#top-menu ul li a {
-	text-decoration: none;
-}
+
 
 
 /***********横幅*************/                              
@@ -33,7 +31,7 @@
 	font-size: 15px;
 	line-height: 25px;
 }
-#main h2 {
+#main h1 {
 	font-size: 20px;
 	margin: 0 0 10px 0;
 }
@@ -57,19 +55,17 @@ img {
 	width: 88%;
 	margin: 20px 6%;
 	padding: 20px 0;
-	border-top: 1px solid #000;
-	border-bottom: 1px solid #000;
 	font-size: 12px;
 	text-align: left;
 }
-#buttom-menu ul {
+#buttom-menu ul li {
 	border-bottom: 1px solid #e3e3e3;
 }
-#buttom-menu h3 {
+#buttom-menu ul li h3 {
 	padding: 10px 0 6px 0;
 	width: 100%;
 }
-#buttom-menu h3::after{
+#buttom-menu ul li h3::after{
 	position: absolute;
 	display: inline-block;
 	content: '';
@@ -81,17 +77,12 @@ img {
 	right: 7px;
 	margin-top: 7px;
 }
-#buttom-menu ul li {
+#buttom-menu ul li ul li {
 	width: 100%;
 	list-style: none;
 	padding: 6px 0;
 	text-indent: .5em;
 }
-#buttom-menu ul li a {
-	text-decoration: none;
-}
-
-
 
 
 
