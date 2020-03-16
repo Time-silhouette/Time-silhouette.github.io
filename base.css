@@ -16,16 +16,46 @@ body {
 	font-family: sans-serif;
 }
 
-/*           顶部菜单           */
+/************顶部菜单***********/
+#top-menu ul {
+	text-align: center;
+	padding: 10px 0;
+}
+#top-menu ul li {
+	display: inline-block;
+}
+#top-menu ul li a {
+	text-decoration: none;
+}
 
-/*           横幅               */
+/*************横幅***********/
 #bg {
 	max-width: 100%;
 }
 #bg_mob {
 	max-width: 94%;
 }
-/*           展示区             */
+
+
+/************展示区**********/
 #main {
 	width: 100%;
+	margin: 0 3%;
+}
+#main h2 {
+	margin: 0 0 10px 0;
+}
+.show {
+	max-width: 88%;
+	margin: 20px 3%;
+}
+
+
+/********底部菜单栏**********/
+#buttom-menu {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+#buttom-menu ul li ul li a {
+	text-decoration: none;
 }
