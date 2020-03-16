@@ -1,14 +1,15 @@
 @charset "UTF-8";
 
 
-/********顶部菜单***********/
+/********顶部菜单***********/      
 #top-menu ul {
-	text-align: center;
-	padding: 10px 0;
-}                                  
+	background: #399;
+}                           
 #top-menu ul li {
-	display: inline-block;
 	width: 15%;
+}
+#top-menu ul li a {
+	color: #eee;
 }
 
 
@@ -21,7 +22,6 @@
 	padding: 10px 0;
 	margin: 0 3% 10px 3%;
 	border-bottom: 1px solid #000;
-	border-top:  1px solid #000;
 }
 
 
@@ -31,18 +31,24 @@
 	font-size: 15px;
 	line-height: 25px;
 }
-#main h1 {
-	font-size: 20px;
-	margin: 0 0 10px 0;
-}
 .show {
-	max-width: 88%;
-	margin: 20px 3%;
+	position: relative;
+	padding: 30px 20px 30px;
+	background: #eee;
+}
+.titles {
+	margin-bottom: 10px;
+}
+.content p {
+	font-size: 12px;
+}
+.show:first-child{
+	border-top: 3px solid #399;
+}
+.show:last-child{
+	border-bottom: 3px solid #399;	
 }
 .showimg {
-	max-width: 40%;
-}
-img {
 	float: left;
 	margin: 5px 20px 5px 0;
 }
@@ -57,6 +63,8 @@ img {
 	padding: 20px 0;
 	font-size: 12px;
 	text-align: left;
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #000;
 }
 #buttom-menu ul li {
 	list-style: none;

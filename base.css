@@ -1,10 +1,12 @@
 @charset "UTF-8";
 /********
+	薰衣草#e6e6fa
 	浅紫色#9b59b6
 	深紫色#8e44ad
 	浅蓝色#2980b9
 	深蓝色#3498db
 	浅灰蓝#edf5f9
+	两桶蓝#b0c4de
 *********/
 * {
 	margin: 0;
@@ -20,6 +22,7 @@ body {
 #top-menu ul {
 	text-align: center;
 	padding: 10px 0;
+	z-index: 9999;
 }
 #top-menu ul li {
 	display: inline-block;
@@ -27,6 +30,7 @@ body {
 #top-menu ul li a {
 	text-decoration: none;
 }
+
 
 /*************横幅***********/
 #bg {
@@ -37,24 +41,32 @@ body {
 }
 
 
+
 /************展示区**********/
 #main {
-	width: 100%;
+	width: 94%;
 	margin: 0 3%;
 }
-#main h2 {
-	margin: 0 0 10px 0;
-}
 .show {
-	max-width: 88%;
-	margin: 20px 3%;
+	max-width: 94%;
+	margin: 10px 3%;
+	padding: 30px 20px 30px;
+	background: #eee;
+}
+.showimg {
+	max-width: 40%;
+	display: inline-block;
 }
 
 
 /********底部菜单栏**********/
 #buttom-menu {
-	border-top: 1px solid #000;
-	border-bottom: 1px solid #000;
+	padding: 50px;
+	margin: 50px 0 0;
+	background: #eee;
+}
+#buttom-menu ul li {
+	list-style: none;
 }
 #buttom-menu ul li ul li a {
 	text-decoration: none;
