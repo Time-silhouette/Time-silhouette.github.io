@@ -10,18 +10,54 @@
 }
 
 
-/************展示区***********/
-.showimg {
-	max-width: 40%;
+/************顶部菜单***********/
+#top-menu ul {
+	background: rgba(0,0,0,.85);
+} 
+#top-menu ul li a {
+	margin: 0 20px;
+	color: #838383;
 }
+
+
+/************展示区***********/
+.show {
+	position: relative;
+	height: 210px;
+	border-left: 5px solid #399;
+}
+.showimg, .content {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+}
+.showimg {
+	left: 3%;
+}
+.content {
+	left: 46%;
+	width: 50%;
+	line-height: 23px;
+}
+.titles {
+	margin-bottom: 10px;
+}
+.content p {
+	font-size: 13px;
+}
+
 
 
 /********底部菜单栏********/
 #buttom-menu {
+	position: relative;
 	height: 300px;
 	text-align: center;
 	padding: 25px 0;
-	margin-bottom: 20px;
 }
 #buttom-menu ul li {
 	width: 25%;
