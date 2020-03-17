@@ -96,6 +96,11 @@
 	border-bottom: none;
 }
 
-
+#buttom-menu ul li h3.hide::after{
+	border-color: transparent #000 transparent transparent;	
+}
+#buttom-menu ul li ul.hide {
+	display: none;
+}
 
 
