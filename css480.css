@@ -89,9 +89,12 @@
 	right: 7px;
 	margin-top: 7px;
 }
+#buttom-menu ul li ul {
+	margin-bottom: 10px;
+}
 #buttom-menu ul li ul li {
 	width: 100%;
-	padding: 6px 0;
+	padding: 10px 0;
 	text-indent: .5em;
 	border-bottom: none;
 }
