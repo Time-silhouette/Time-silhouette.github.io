@@ -4,16 +4,16 @@
 	<title>Time silhouette</title>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="base.css">
-	<link rel="stylesheet" type="text/css" href="css480.css" media="screen and (max-width:480px)">
-	<link rel="stylesheet" type="text/css" href="css481_1024.css" media="screen and (min-width:481px) and (max-width:1024px)">
-	<link rel="stylesheet" type="text/css" href="css1025.css" media="screen and (min-width:1025px)">
+	<link rel="stylesheet" type="text/css" href="topMenu.css">
+	<link rel="stylesheet" type="text/css" href="banner.css">
+	<link rel="stylesheet" type="text/css" href="show.css">
+	<link rel="stylesheet" type="text/css" href="buttomMenu.css">
 </head>
 <body>
 	<nav id="top-menu">
 		<ul>
 			<li><a href="">首页</a></li>
 			<li><a href="">小店</a></li>
-			<li><a href="">放映场</a></li>
 			<li><a href="">约拍</a></li>
 			<li><a href="">我的</a></li>
 		</ul>
@@ -54,7 +54,6 @@
 				<ul>
 					<li><a href="">签约摄影师</a></li>
 					<li><a href="">纪念品小店</a></li>
-					<li><a href="">影片放映场</a></li>
 				</ul>
 			</li>
 			<li>
@@ -87,35 +86,6 @@
 		</ul>
 	</footer>
 	<script src="jquery-3.4.1.min.js" type="text/javascript"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-	//	底部菜单折叠
-			function foldAll(){
-				for (var i = 0; i < $('#buttom-menu > ul > li > h3').length; i++){
-					$('#buttom-menu > ul > li > h3')[i].className = 'hide';
-				}
-				for (var j = 0; j < $('#buttom-menu > ul > li > ul').length; j++){
-					$('#buttom-menu > ul > li > ul')[j].className = 'hide';
-				}
-			}
-			foldAll();
-			for (var i = 0; i < $('#buttom-menu > ul > li > h3').length; i++){
-				$('#buttom-menu > ul > li > h3')[i].onclick = function(){
-					collapse(this);
-				}
-			}
-			function collapse(obj){
-				var targclass;
-				if (obj.className==='hide') {
-					targclass = '';
-				}else{
-					targclass = 'hide';
-				}
-			//	foldAll();
-				obj.parentNode.getElementsByTagName('ul')[0].className = targclass;
-				obj.className = targclass;
-			}
-		});
-	</script>
+	<script type="text/javascript" src="collapse.js"></script>
 </body>
 </html>
