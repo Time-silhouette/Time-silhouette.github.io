@@ -17,6 +17,7 @@ body {
 	z-index: 9999;
 }
 #top-menu ul {
+	background: rgba(0,0,0,.85);
 	text-align: center;
 	padding: 10px 0;
 	z-index: 9999;
@@ -33,9 +34,6 @@ body {
 @media screen and (max-width:480px) {
 	#top-menu {
 		height: 38.4px;
-	} 
-	#top-menu ul {
-	background: #399;
 	}                           
 	#top-menu ul li {
 		width: 15%;
@@ -44,9 +42,6 @@ body {
 
 
 @media screen and (min-width:481px) and (max-width:1024px) {
-	#top-menu ul {
-		background: rgba(0,0,0,.85);
-	} 
 	#top-menu ul li a {
 		margin: 0 20px;	
 	}
@@ -54,9 +49,6 @@ body {
 
 
 @media screen and (min-width:1025px) {
-	#top-menu ul {
-		background: rgba(0,0,0,.85);
-	}
 	#top-menu ul li a {
 		margin: 0 20px;
 	}
