@@ -10,6 +10,9 @@ body {
 	width: 100%;
 	font-family: sans-serif;
 }
+#mail {
+	text-align: center;
+}
 
 
 @media screen and (max-width:480px) {
@@ -79,14 +82,12 @@ body {
 		border: 1px solid #333;
 		text-indent: .6em;
 	}
-
 	#mail {
 		width: 60%;
-		margin-left: 20%;
 		margin-top: 50px;
+		margin-left: 20%;
 		padding-top: 40px;
 		border-top: 1px solid #000;
-		text-align: center;
 	}
 	#mail p {
 		line-height: 50px;
@@ -122,10 +123,9 @@ body {
 		border: 1px solid #333;
 		text-indent: .6em;
 	}
-
 	#mail {
 		width: 30%;
-		margin-left: 35.5%;
+		margin-left: 35%;
 		margin-top: 50px;
 		padding-top: 40px;
 		border-top: 1px solid #999;
