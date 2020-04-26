@@ -19,6 +19,10 @@ body {
 	border-radius: 6px;
 	box-shadow: none;
 }
+#appoint ul li {
+	padding: 20px;
+	list-style: none;
+}
 
 @media screen and (max-width:480px) {
 	#container {
@@ -35,7 +39,6 @@ body {
 		line-height: 40px;
 	}
 	#appoint ul li h2 {
-		/*display: none;*/
 		font-size: 20px;
 		margin-bottom: 10px;
 	}
@@ -45,10 +48,6 @@ body {
 	}
 	#appoint h1 {
 		margin: 20px 0;
-	}
-	#appoint ul li {
-		list-style: none;
-		padding: 10px;
 	}
 	#appoint ul li input {
 		height: 36px;
@@ -76,9 +75,6 @@ body {
 		font-size: 50px;
 		margin: 20px;
 	}
-	#appoint ul li {
-		padding: 20px;
-	}
 	#appoint ul li h2 {
 		margin-bottom: 20px;
 	}
@@ -100,6 +96,7 @@ body {
 		line-height: 50px;
 		font-size: 20px;
 	}
+
 }
 
 
@@ -115,9 +112,6 @@ body {
 	#appoint h1 {
 		font-size: 50px;
 		margin: 20px;
-	}
-	#appoint ul li {
-		padding: 20px;
 	}
 	#appoint ul li h2 {
 		margin-bottom: 20px;
