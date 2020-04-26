@@ -16,7 +16,7 @@ body {
 	margin-top: 58.4px;
 }
 #bg_mob {
-	max-width: 96%;
+	max-width: 98%;
 	margin-top: 58.4px;
 }
 
@@ -27,7 +27,7 @@ body {
 	}
 	#bg_mob {
 		padding: 10px 0;
-		margin: 38.4px 2% 10px 2%;
+		margin: 38.4px 1% 10px 1%;
 		border-bottom: 1px solid #000;
 	}
 }
