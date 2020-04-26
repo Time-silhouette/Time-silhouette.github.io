@@ -35,7 +35,9 @@ body {
 		line-height: 40px;
 	}
 	#appoint ul li h2 {
-		display: none;
+		/*display: none;*/
+		font-size: 20px;
+		margin-bottom: 10px;
 	}
 	#appoint {
 		text-align: center;
