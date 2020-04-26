@@ -13,7 +13,10 @@ body {
 #mail {
 	text-align: center;
 }
-
+	#appoint ul li button {
+		width: 90px;
+		height: 35px;
+	}
 
 @media screen and (max-width:480px) {
 	#container {
