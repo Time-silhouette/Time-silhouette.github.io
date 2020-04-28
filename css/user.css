@@ -14,8 +14,62 @@ body {
 
 
 @media screen and (max-width:480px) {
+	#main {
+		height: 280px;
+	}
+	#main article{
+		padding: 20px;
+		background: #fff;
+		line-height: 80px;
+		text-align: center;
+	}
+	#form li input {
+		width: 220px;
+		height: 35px;
+		border-radius: 6px;
+	}
+	#form ul li {
+		display: inline-block;
+		margin: 10px;
+		width: 130px;
+	}
+	button {
+		width: 100px;
+		height: 30px;
+		border-radius: 6px;
+	}
 }
 @media screen and (min-width:481px) and (max-width:1024px) {
+	#main {
+		height: 460px;
+		background: #f5f5f7;
+	}
+	#main article{
+		position: absolute;
+		margin-top: -50px;
+		padding: 50px;
+		background: #fff;
+		height: 370px;
+		line-height: 80px;
+		width: 60%;
+		margin-left: 20%;
+		text-align: center;
+	}
+	#form li input {
+		width: 220px;
+		height: 35px;
+		border-radius: 6px;
+	}
+	#form ul li {
+		display: inline-block;
+		margin: 10px;
+		width: 130px;
+	}
+	button {
+		width: 100px;
+		height: 30px;
+		border-radius: 6px;
+	}
 }
 @media screen and (min-width:1025px) {
 	#main {
