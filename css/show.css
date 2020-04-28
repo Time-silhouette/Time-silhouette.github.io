@@ -21,7 +21,7 @@ body {
 	background: #fff;
 }
 .showimg {
-	max-width: 40%;
+	max-width: 35%;
 	display: inline-block;
 }
 
@@ -52,6 +52,7 @@ body {
 	}
 */	.showimg {
 		float: left;
+		max-width: 40%;
 		margin: 5px 20px 5px 0;
 	}
 }
@@ -106,7 +107,7 @@ body {
 		-o-transform: translateY(-50%);
 	}
 	.showimg {
-		left: 3%;
+		left: 5%;
 	}
 	.content {
 		text-align: center;
