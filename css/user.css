@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+body {
+	width: 100%;
+	font-family: sans-serif;
+}
+
+
+@media screen and (max-width:480px) {
+}
+@media screen and (min-width:481px) and (max-width:1024px) {
+}
+@media screen and (min-width:1025px) {
+	#main {
+		height: 500px;
+		background: #f5f5f7;
+	}
+	#main article{
+		position: absolute;
+		margin-top: -120px;
+		padding: 100px;
+		background: #fff;
+		height: 450px;
+		line-height: 60px;
+		width: 50%;
+		margin-left: 25%;
+		text-align: center;
+	}
+	#form li input {
+		width: 220px;
+		height: 35px;
+		border-radius: 6px;
+	}
+	#form ul li {
+		display: inline-block;
+		margin: 10px;
+		width: 130px;
+	}
+	button {
+		width: 100px;
+		height: 30px;
+		border-radius: 6px;
+	}
+}
