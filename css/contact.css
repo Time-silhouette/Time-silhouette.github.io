@@ -12,6 +12,7 @@ body {
 }
 #mail {
 	text-align: center;
+	margin-bottom: 50px;
 }
 #appoint ul li button {
 	width: 90px;
