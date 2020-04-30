@@ -8,6 +8,7 @@
 body {
 	width: 100%;
 	font-family: sans-serif;
+	background: #f5f5f7;
 }
 
 #contrduce {
@@ -56,7 +57,7 @@ body {
 	.show {
 		position: relative;
 		padding: 25px 20px 25px;
-		background: #eee;
+		background: #fff;
 		border-radius: 6px;
 	}
 	.titles {
